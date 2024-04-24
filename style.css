@@ -12,7 +12,49 @@
 .fa-solid {
     color: var(--main-color);
 }
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.header ul {
+    display: flex;
+    list-style: none;
+}
+
+.header ul li {
+    margin-left: 10px; /* Espacement entre les éléments de la liste */
+}
+
+.header ul li:first-child {
+    margin-left: 0; /* Aucun espacement à gauche pour le premier élément */
+}
+
+nav ul li:first-child a {
+    border-top: 2px solid blue;
+    padding-top: 5px; /* Ajoutez un espace au-dessus du texte pour compenser la bordure */
+}
+
+.header img {
+    width: 61.09px; /* Définissez la largeur souhaitée du logo */
+    height: 19px; /* Laissez la hauteur s'ajuster automatiquement en fonction de la largeur pour préserver les proportions */
+}
+
+.headline {
+    width: Fill (1,340px)px;
+    height: Fixed (53px)px;
+    gap: 8px;
+    opacity: 0px;
+}
+
+ .main-title {
+    font-size: 22px;
+ }
+
+ .text-info {
+    font-size: 16px;
+ }
 body {
     display: flex;
     justify-content: center;
