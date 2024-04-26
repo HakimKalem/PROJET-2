@@ -12,52 +12,110 @@
 .fa-solid {
     color: var(--main-color);
 }
+
+/****** Header ***********/
+
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 1440px;
+    height: 79px;
 }
 
-.header ul {
-    display: flex;
-    list-style: none;
-}
+.logo-container {
+    width: Hug (161.09px)px;
+    height: Hug (79px)px;
+    padding: 30px 50px 30px 50px;
+    gap: 10px;
+    opacity: 0px;
 
-.header ul li {
-    margin-left: 10px; /* Espacement entre les éléments de la liste */
-}
-
-.header ul li:first-child {
-    margin-left: 0; /* Aucun espacement à gauche pour le premier élément */
-}
-
-nav ul li:first-child a {
-    border-top: 2px solid blue;
-    padding-top: 5px; /* Ajoutez un espace au-dessus du texte pour compenser la bordure */
 }
 
 .header img {
-    width: 61.09px; /* Définissez la largeur souhaitée du logo */
-    height: 19px; /* Laissez la hauteur s'ajuster automatiquement en fonction de la largeur pour préserver les proportions */
+    width: 61, 09px;
+    /* Définissez la largeur souhaitée du logo */
+    height: 19px;
+    /* Définissez la hauteur souhaitée du logo */
 }
 
-.headline {
-    width: Fill (1,340px)px;
-    height: Fixed (53px)px;
-    gap: 8px;
-    opacity: 0px;
+.navigation {
+    display: flex;
+    width: Hug (344px)px;
+    height: Hug (35px)px;
+    left: 1096px;
+    padding: 0px 50px 0px 50px;
+    gap: 68px;
 }
 
- .main-title {
-    font-size: 22px;
- }
+.button {
+    display: flex;
+    width: 244px;
+    height: 35px;
+    gap: 68px;
+}
 
- .text-info {
+li {display: flex;}
+li :hover {color:#0065FC;}
+li :hover {border-top: 2px solid #0065FC; padding-top: 5px;}
+    
+
+.header ul li:first-child {
+    width: 113px;
+    height: 35px;
+
+}
+
+.header ul li:nth-child(2) {
+    width: 63px;
+    height: 35px;
+
+}
+
+.header ul li:first-child a {
+    font-style: Nav/Standard;
+    font-family: Raleway;
+    color: #0065FC;
     font-size: 16px;
- }
+    font-weight: 400;
+    line-height: 18.78px;
+    text-align: center;
+}
+
+.header ul li:first-child a {
+    border-top: 2px solid #0065FC;
+    /* Bordure de 2 pixels de largeur, de type solide et de couleur bleue */
+    width: 113px;
+    /* Largeur de l'élément */
+    padding-top: 5px;
+    /* Ajoutez un espace au-dessus du texte pour compenser la bordure */
+}
+
+.header ul li:nth-child(2) a {
+    font-style: Nav/Standard;
+    font-family: Raleway;
+    color: black;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.78px;
+    text-align: center;
+
+}
+
+/****** Body ***********/
+
 body {
     display: flex;
     justify-content: center;
+}
+
+body {
+    width: Fill (1, 440px)px;
+    height: Hug (1, 722.02px)px;
+    padding: 0px 50px 0px 50px;
+    gap: 35px;
+    opacity: 0px;
+
 }
 
 .main-container {
@@ -66,6 +124,96 @@ body {
     padding: 0 50px;
     box-sizing: border-box;
 }
+
+.group-info {
+    width: Fill;
+    height: 281px;
+    gap: 35px;
+
+}
+
+.headline {
+    width: Fill (1, 340px)px;
+    height: Fixed (53px)px;
+    gap: 8px;
+}
+
+.main-title {
+    font-family: Raleway;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 25.83px;
+    text-align: left;
+}
+
+.text-info {
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.78px;
+    text-align: left;
+
+}
+
+.search-bar {
+    margin top: 20px;
+    position: relative;
+
+}
+
+.location-icon {
+    position: absolute;
+    width: 50px;
+    height: 49px;
+    border-radius: 15px 0px 0px 15px;
+    border: 1px 0px 0px 0px;
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: center;
+
+}
+
+form {
+    display: flex;
+    /* Utilisation de flexbox pour aligner les éléments */
+    flex-direction: row;
+    align-items: center;
+    /* Centrer les éléments verticalement */
+    margin: auto;
+    width: auto;
+
+}
+
+.search-bar i {
+    position: absolute;
+    left: 10px;
+}
+
+.search-bar input[type="text"] {
+    padding-left: 30px;
+    /* Ajouter un espace pour le logo à gauche */
+}
+
+input {
+    width: 377px;
+    height: 49px;
+    gap: 24px;
+    border-radius: 15px 15px 15px 15px;
+    border: 1px 1px 1px 1px;
+    background-color: #FFFFFF;
+    border-color: #F2F2F2;
+}
+
+.fa-location-dot {
+    width: 14px;
+    height: 18px;
+    top: 15px;
+    left: 18px;
+    color: black;
+
+}
+
+
 
 a {
     color: inherit;
