@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <div class="main-container"></div>
+    <div class="main-container">
 
     <header class="header">
         <div class="logo-container">
@@ -32,24 +32,28 @@
 
     <main>
 
-        <section class="group-info">
-            <div class="headline">
+        <div class="group-info">
+            <section class="headline">
                 <h1 class="main-title">Trouvez votre hebergement pour des vacances de reve</h1>
                 <p class="text-info">En plein centre-ville ou en pleine nature</p>
-            </div>
+            </section>
 
             <div class="search-bar">
                 <form action="" method="get">
                     <div class="location-icon">
                         <i class="fa-solid fa-location-dot"></i>
                     </div>
-                    <input type="text" placeholder="Marseille,France" name="Search">
-                    <button type="submit">Rechercher</button>
+                    <div>
+                        <input class="recherche" 
+                        type="search" 
+                        value="Marseille,France">
+                    </div>
+                    <div class="backbleu">Rechercher</div>
                 </form>
             </div>
 
-            <div class="filter bar">
-                <h1 class="filtre-title">Filtres</h1>
+            <div class="filter-bar">
+                <h1 class="filter-title">Filtres</h1>
                 <div class="filter-group">
                     <div class="filter-item">
                         <i class="fa-solid fa-money-bill-wave"></i>
@@ -74,9 +78,7 @@
                 <i class="fa-light fa-circle-info"></i>
                 <span>Plus de 500 logements sont disponible dans cette ville</span>
             </div>
-
-
-        </section>
+        </div>
 
         <div class="hebergements-and-populaires">
             <section class="hebergements">
@@ -153,7 +155,6 @@
         </div>
     </main>
     <footer></footer>
-    </div>
     </div>
 </body>
 
