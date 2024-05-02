@@ -37,6 +37,8 @@
     /* Définissez la hauteur souhaitée du logo */
 }
 
+/****** Menu Nav ***********/
+
 .navigation {
     display: flex;
     width: 344px;
@@ -73,12 +75,13 @@
 ul li {
     display: flex;
     align-items: center;
+    padding-top: 5px;
 }
 
 ul li:hover {
     color: #0065FC;
     border-top: 2px solid #0065FC;
-    padding-top: 5px;
+    margin-top: -2px;
 }
 
 
@@ -95,17 +98,19 @@ body {
     max-width: 1440px;
     padding: 0px 50px;
     box-sizing: border-box;
-    margin: 20px auto;/* Ajoute une marge de 20px en haut et en bas, et centre le contenu horizontalement */
+    margin: 20px auto;
+    /* Ajoute une marge de 20px en haut et en bas, et centre le contenu horizontalement */
 }
 
+/****** En tete ***********/
 
 .group-info {
     display: flex;
     flex-direction: column;
     width: 1340px;
-    height: 281px;
     margin-top: 20px;
     margin-bottom: 20px;
+    gap: 35px;
 }
 
 .headline {
@@ -113,7 +118,6 @@ body {
     flex-direction: column;
     gap: 8px;
     width: 1340px;
-    height: 53px;
 }
 
 .main-title {
@@ -132,13 +136,19 @@ body {
     line-height: 18.78px;
 }
 
+/****** Barre de recherche ***********/
+
 .search-bar {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 400px;
     border-radius: 10px;
-    border: 0.5px solid #F2F2F2;  
+    border: 0.5px solid #F2F2F2;
+}
+
+.search-bar form {
+    display: flex;
 }
 
 .location-icon {
@@ -151,35 +161,40 @@ body {
     align-items: center;
 }
 
- .recherche {
+.recherche {
     height: 50px;
     width: 230px;
     font-size: 18px;
     color: black;
-    font-style: bold;
+    font-weight: bold;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
     border: none;
+    outline: none;
     padding-left: 20px;
- }
+}
 
- .backbleu {
+.backbleu {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 50px;
     width: 120px;
     color: white;
+    background-color: #0065FC;
     cursor: pointer;
-    border-radius: 0 10px 10x 0;
- }
+    border-radius: 0 10px 10px 0;
+}
 
 .location-icon i {
     width: 14px;
     height: 18px;
     color: black;
 }
+
+/****** Barre de filtres ***********/
 
 .filter-bar {
     width: 758px;
@@ -195,18 +210,74 @@ body {
     font-size: 18px;
     font-weight: 700;
     text-align: center;
-
 }
 
 .filter-group {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid #F2F2F2;
+    height: 50px;
+    border-radius: 30px;
+    margin-right: 20px;
 }
 
-.filter-item {
+.filter-group i {
+    border-radius: 25px;
+    width: 52px;
+    height: 52px;
+    color: #0065FC;
     display: flex;
     align-items: center;
-
+    justify-content: center;
 }
+
+.filter-group:hover {
+    background-color: #DEEBFF;
+    /* Change la couleur de fond au survol de la souris */
+}
+
+.filter-text {
+    height: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 0 25px 25px 0;
+    font-size: 17px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+/****** Icone info ***********/
+
+.info-message {
+    display: flex;
+    align-items: center;
+}
+
+.info-message p {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.parent-icon {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #d9d9d9;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.info-message i {
+    color: #0065FC;
+}
+
+
+
+/****** Hebergements carte***********/
 
 a {
     color: inherit;
@@ -257,11 +328,56 @@ a {
 }
 
 /****** Hebergements ***********/
+
 .hebergements {
     width: 65%;
 }
 
+.hebergements-title{
+    display: flex;
+    align-items: center;
+}
+
+.bloc-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.bloc-2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.hebergements-cards .card {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 33px;
+}
+
+.hebergements-cards img {
+    width: 250px;
+    height: 114px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.hebergements-cards .card-content {
+    width: 34%;
+    padding-left: 15px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.hebergements-cards .card-rating {
+    margin-bottom: 5px;
+    display: flex;
+}
+
+
 /****** Populaires ***********/
+
 .populaires {
     width: 32%;
 }
