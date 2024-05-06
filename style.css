@@ -395,7 +395,7 @@ a {
 
 /****** Hebergements ***********/
 
-.hebergements {
+#hebergements {
     width: 65%;
 }
 
@@ -499,7 +499,7 @@ a {
 
 /****** Activites ***********/
 
-.activites {
+#activites {
     margin-top: 50px;
     margin-bottom: 50px;
     height: 560px;
@@ -513,6 +513,7 @@ a {
     width: 1, 280px;
     height: 439px;
     gap: 30px;
+    cursor: pointer;
 }
 
 .bloc-activites .card {
@@ -536,6 +537,56 @@ a {
     text-align: left;
     align-items: center;
 }
+
+
+/****** Footer ***********/
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 163px;
+    margin-top: 33px;
+    padding: 20px;
+    gap: 15px;
+    background-color: #F2F2F2;
+}
+
+.bloc-footer1 {
+    height: 163px;
+    padding: 20px 0px 0px 0px;
+    margin-left: 5%;
+}
+
+.bloc-footer2 {
+    height: 163px;
+    padding: 20px 0px 0px 0px;
+}
+
+.bloc-footer3 {
+    height: 163px;
+    padding: 20px 0px 0px 0px;
+    margin-right: 20%;
+}
+
+.footer-title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.13px;
+    text-align: left;
+}
+
+.footer p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.78px;
+    text-align: left;
+}
+
+
+
+
+
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
