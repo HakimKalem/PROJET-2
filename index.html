@@ -17,6 +17,8 @@
 <body>
     <div class="main-container">
 
+            <!-- HEADER -->
+
         <header class="header">
             <div class="logo-container">
                 <img src="images/Logo/Booki.png" alt="Logo du site Booki">
@@ -32,11 +34,15 @@
 
         <main>
 
+            <!-- EN-TETE -->
+
             <div class="group-info">
                 <section class="headline">
                     <h1 class="main-title">Trouvez votre hebergement pour des vacances de reve</h1>
                     <p class="text-info">En plein centre-ville ou en pleine nature</p>
                 </section>
+
+                <!-- BARRE DE RECHERCHE -->
 
                 <div class="search-bar">
                     <form action="" method="get">
@@ -50,39 +56,48 @@
                     </form>
                 </div>
 
+                <!-- BARRE DE FILTRES -->
+
                 <div class="filter-bar">
                     <h1 class="filter-title">Filtres</h1>
-                    <div class="filter-group">
+                    <div class="filter-group1">
                         <i class="fa-solid fa-money-bill-wave"></i>
                         <span class="filter-text">Economique</span>
                     </div>
-                    <div class="filter-group">
+                    <div class="filter-group2">
                         <i class="fa-solid fa-person"></i>
                         <span class="filter-text">Familial</span>
                     </div>
-                    <div class="filter-group">
+                    <div class="filter-group3">
                         <i class="fa-solid fa-heart"></i>
                         <span class="filter-text">Romantique</span>
                     </div>
-                    <div class="filter-group">
+                    <div class="filter-group4">
                         <i class="fa-solid fa-fire"></i>
                         <span class="filter-text">Nos pepites</span>
                     </div>
                 </div>
             </div>
 
+            <!-- INFO MESSAGE -->
+
             <div class="info-message">
                 <div class="parent-icon"><i class="fas fa-info fa-xs"></i></div>
                 <p>Plus de 500 logements sont disponible dans cette ville</p>
             </div>
-    </div>
 
+            <!-- SECTION HEBERGEMENTS ET POPULAIRES -->
+    
     <div class="hebergements-and-populaires">
+
+        <!-- CARTES HEBERGEMENTS -->
+
         <section class="hebergements">
             <div class="hebergements-title">
                 <h2 class="section-title">Hebergements a Marseille</h2>
             </div>
             <div class="hebergements-cards">
+                <div class="bloc1">
                 <a href="#">
                     <article class="card">
                         <img src="images/Hebergement/fred-kleber.jpg" alt="Image de la chambre d'hôtel montrant un lit">
@@ -141,6 +156,8 @@
                         </div>
                     </article>
                 </a>
+                </div>
+                <div class="bloc2">
                 <a href="#">
                     <article class="card">
                         <img src="images/Hebergement/annie-spratt.jpg"
@@ -199,8 +216,13 @@
                         </div>
                     </article>
                 </a>
+                </div>
             </div>
+            <p class="afficher-plus">Afficher plus</p>
         </section>
+
+        <!--CARTES POPULAIRES-->
+
         <section class="populaires">
             <div class="populaires-title">
                 <h2 class="section-title">Les plus populaires</h2>
@@ -269,6 +291,43 @@
             </div>
         </section>
     </div>
+
+    <!----CARTES ACTIVITES -->
+
+    <section class="activites">
+        <h2>Activites a Marseille</h2>
+        <div class="bloc-activites">
+            <article class="card">
+                <img src="images/Activites/reno-laithienne.jpg" 
+                alt="Image du Vieux-Port">
+                <div class="card-content">
+                    <h3>Vieux-Port</h3>
+                </div>
+            </article>
+            <article class="card">
+                <img src="images/Activites/paul-hermann.jpg" 
+                alt="Image du Fort de Pomegues">
+                <div class="card-content">
+                    <h3>Fort de Pomegues</h3>
+                </div>
+            </article>
+            <article class="card">
+                <img src="images/Activites/kilyan-sockalingum.jpg" 
+                alt="Image du Parc national des Calanques">
+                <div class="card-content">
+                    <h3>Parc national des Calanques</h3>
+                </div>
+            </article>
+            <article class="card">
+                <img src="images/Activites/florian-wehde.jpg" 
+                alt="Image de Notre-Dame-de-la-Garde">
+                <div class="card-content">
+                    <h3>Notre-Dame-de-la-Garde</h3>
+                </div>
+            </article>
+        </div>
+
+    </section>
     </main>
     <footer></footer>
     </div>
