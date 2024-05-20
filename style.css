@@ -216,6 +216,12 @@ ul li:hover {
     text-align: center;
 }
 
+.all-group {
+    display: flex;
+    flex-direction: row;
+
+}
+
 .filter-group1 {
     display: flex;
     align-items: center;
@@ -642,6 +648,7 @@ a {
 
     .navigation {
         display: flex;
+        justify-content: flex-end;
         width: 344px;
         height: 35px;
         padding: 0px 50px 0px 50px;
@@ -760,7 +767,7 @@ a {
         padding-left: 20px;
     }
 
-    .backbleu {
+    .big-button {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -785,7 +792,8 @@ a {
         height: 50px;
         gap: 15px;
         display: flex;
-        align-items: center;
+        flex-direction: column;
+        align-items: start;
     }
 
     .filter-title {
@@ -796,12 +804,18 @@ a {
         text-align: center;
     }
 
+    .all-group {
+        display: flex;
+        flex-direction: row;
+    }
+
+
     .filter-group1 {
         display: flex;
         align-items: center;
         justify-content: space-between;
         border: 2px solid #F2F2F2;
-        width: 173px;
+        width: 17%;
         height: 50px;
         padding: 4px 19px 4px 19px;
         border-radius: 30px;
@@ -814,7 +828,7 @@ a {
         align-items: center;
         justify-content: space-between;
         border: 2px solid #F2F2F2;
-        width: 134px;
+        width: 11%;
         height: 50px;
         padding: 4px 19px 4px 19px;
         border-radius: 30px;
@@ -827,7 +841,7 @@ a {
         align-items: center;
         justify-content: space-between;
         border: 2px solid #F2F2F2;
-        width: 170px;
+        width: 16%;
         height: 50px;
         padding: 4px 19px 4px 19px;
         border-radius: 30px;
@@ -840,7 +854,7 @@ a {
         align-items: center;
         justify-content: space-between;
         border: 2px solid #F2F2F2;
-        width: 167px;
+        width: 19%;
         height: 50px;
         padding: 4px 19px 4px 19px;
         border-radius: 30px;
@@ -890,6 +904,11 @@ a {
         display: flex;
         align-items: center;
     }
+
+    .info-message {
+        margin-top: 12%;
+    }
+
 
     /****** Hebergements et populaires ***********/
 
@@ -1013,7 +1032,7 @@ a {
     }
 
     .bloc-activites .card-content {
-        font-size: 16px;
+        font-size: 12px;
         font-weight: 700;
         line-height: 18.78px;
         padding-left: 23px;
@@ -1086,8 +1105,8 @@ a {
 
     .main-container {
         width: 100%;
-        max-width: 375px;
-        padding: 0px 50px;
+        max-width: 768px;
+        padding: 0;
         box-sizing: border-box;
         margin: 0px auto;
     }
@@ -1097,14 +1116,17 @@ a {
 
     .header {
         display: flex;
-        width: 375px;
-        height: 115px;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 20px;
     }
 
     .logo-container {
-        display: block;
-        width: 161.09px;
+        display: flex;
+        width: 100%;
         align-items: center;
+        justify-content: center;
         gap: 10px;
     }
 
@@ -1120,27 +1142,30 @@ a {
 
     .navigation {
         display: flex;
-        width: 344px;
+        width: 100%;
         height: 35px;
-        padding: 0px 50px 0px 50px;
+        padding: 0;
         gap: 68px;
     }
 
     .list {
-        margin-top: 3px;
+        margin-top: 0;
+        padding: 0 50px 0 50px;
         display: flex;
-        width: 244px;
+        justify-content: center;
+        width: 100%;
         height: 35px;
         gap: 68px;
+        border-bottom: 5px solid #F2F2F2;
     }
 
     .first-button {
-        width: 113px;
+        width: 50%;
         height: 35px;
     }
 
     .nd-button {
-        width: 63px;
+        width: 50%;
         height: 35px;
     }
 
@@ -1159,8 +1184,9 @@ a {
 
     ul li:hover {
         color: #0065FC;
-        border-top: 2px solid #0065FC;
-        margin-top: -2px;
+        border-top: 0;
+        border-bottom: 5px solid #0065FC;
+        margin-bottom: -2px;
     }
 
 
@@ -1170,7 +1196,8 @@ a {
     .group-info {
         display: flex;
         flex-direction: column;
-        width: 924px;
+        width: 100%;
+        padding: 0 20px 0 20px;
         margin-top: 20px;
         margin-bottom: 20px;
         gap: 35px;
@@ -1179,13 +1206,14 @@ a {
     .headline {
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
         gap: 8px;
-        width: 924px;
+        width: 100%;
     }
 
     .main-title {
         display: flex;
-        width: 924px;
+        width: 90%;
         height: 26px;
         font-size: 22px;
         font-weight: 700;
@@ -1205,7 +1233,7 @@ a {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 400px;
+        width: 325px;
         border-radius: 10px;
         border: 0.5px solid #F2F2F2;
     }
@@ -1239,17 +1267,27 @@ a {
         padding-left: 20px;
     }
 
-    .backbleu {
+    .big-button {
+        display: none;
+    }
+        
+        
+    .button-mobile {
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 50px;
-        width: 120px;
-        color: white;
         background-color: #0065FC;
-        cursor: pointer;
-        border-radius: 0 10px 10px 0;
+        height: 20px;
+        padding: 15px 16px 15px 16px;
+        gap: 10px;
+        border-radius: 15px;
     }
+
+    .button-mobile i {
+        color: white;
+    }
+
+
 
     .location-icon i {
         width: 14px;
@@ -1261,10 +1299,18 @@ a {
     /****** Barre de filtres ***********/
 
     .filter-bar {
-        height: 50px;
+        height: 100%;
+        width: 90%;
         gap: 15px;
         display: flex;
-        align-items: center;
+    }
+
+    .all-group {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 10px;
     }
 
     .filter-title {
@@ -1272,7 +1318,7 @@ a {
         height: 21px;
         font-size: 18px;
         font-weight: 700;
-        text-align: center;
+        text-align: start;
     }
 
     .filter-group1 {
@@ -1280,11 +1326,11 @@ a {
         align-items: center;
         justify-content: space-between;
         border: 2px solid #F2F2F2;
-        width: 173px;
+        width: 120px;
         height: 50px;
         padding: 4px 19px 4px 19px;
         border-radius: 30px;
-        margin-right: 20px;
+        margin-right: 0;
         cursor: pointer;
     }
 
@@ -1293,11 +1339,11 @@ a {
         align-items: center;
         justify-content: space-between;
         border: 2px solid #F2F2F2;
-        width: 134px;
+        width: 120px;
         height: 50px;
         padding: 4px 19px 4px 19px;
         border-radius: 30px;
-        margin-right: 20px;
+        margin-right: 0;
         cursor: pointer;
     }
 
@@ -1306,11 +1352,11 @@ a {
         align-items: center;
         justify-content: space-between;
         border: 2px solid #F2F2F2;
-        width: 170px;
+        width: 120px;
         height: 50px;
         padding: 4px 19px 4px 19px;
         border-radius: 30px;
-        margin-right: 20px;
+        margin-right: 0;
         cursor: pointer;
     }
 
@@ -1319,16 +1365,16 @@ a {
         align-items: center;
         justify-content: space-between;
         border: 2px solid #F2F2F2;
-        width: 167px;
+        width: 120px;
         height: 50px;
         padding: 4px 19px 4px 19px;
         border-radius: 30px;
-        margin-right: 20px;
+        margin-right: 0;
         cursor: pointer;
     }
 
 
-    .filter-group i {
+    .all-group i {
         border-radius: 25px;
         width: 52px;
         height: 52px;
@@ -1361,14 +1407,22 @@ a {
 
     .filter-text {
         height: 50px;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
         border-radius: 0 25px 25px 0;
         font-size: 17px;
         font-weight: bold;
         display: flex;
         align-items: center;
     }
+
+
+    .info-message {
+        margin-top: 20%;
+        margin-bottom: -15%;
+        padding-left: 7%;
+    }
+
 
     /****** Hebergements et populaires ***********/
 
@@ -1382,6 +1436,8 @@ a {
 
     #hebergements {
         width: 100%;
+        order: 2;
+        background-color: white;
     }
 
     .hebergements-title {
@@ -1389,26 +1445,19 @@ a {
         align-items: center;
     }
 
-    .bloc1 {
-        display: flex;
-        justify-content: space-between;
+    .hebergements-cards a {
+        width: 100%;
     }
-
-    .bloc2 {
-        display: flex;
-        justify-content: space-between;
-    }
-
 
     .hebergements-cards .card {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         flex-direction: column;
         margin-top: 33px;
     }
 
     .hebergements-cards img {
-        width: 250px;
+        width: 100%;
         height: 114px;
         border: 5px;
         border-top-left-radius: 20px;
@@ -1443,16 +1492,17 @@ a {
     .populaires {
         width: 100%;
         margin-top: 50px;
+        order: 1;
     }
 
     .populaires-cards {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-between;
     }
 
     .populaires-cards a {
-        width: 30%;
+        width: 100%;
     }
 
     .populaires-cards .card-title {
@@ -1467,30 +1517,32 @@ a {
     /****** Activites ***********/
 
     #activites {
-        margin-top: 50px;
+        margin-top: 0;
         margin-bottom: 50px;
-        height: 390px;
+        height: 100%;
         padding: 30px;
         gap: 30px;
     }
 
     .bloc-activites {
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
-        width: 864px;
-        height: 270px;
+        width: 100%;
+        height: 100%;
         gap: 30px;
         cursor: pointer;
     }
 
     .bloc-activites .card {
-        width: 193.5px;
+        width: 100%;
         height: 270px;
-        border-radius: 20px 20px 0px 0px;
+        border-radius: 20px;
+        box-sizing: border-box;
     }
 
     .bloc-activites img {
-        width: 193.5px;
+        width: 100%;
         height: 200px;
         border-radius: 20px 20px 0px 0px;
     }
@@ -1510,30 +1562,35 @@ a {
 
     .footer {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 163px;
-        margin-top: 33px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        height: 461px;
+        margin-top: 20%;
         padding: 20px;
-        gap: 15px;
+        gap: 30px;
         background-color: #F2F2F2;
     }
 
     .bloc-footer1 {
-        height: 163px;
-        padding: 20px 0px 0px 0px;
-        margin-left: 5%;
+        width: 100%;
+        height: 150px;
+        padding: 0;
+        margin-left: 10px;
     }
 
     .bloc-footer2 {
-        height: 163px;
-        padding: 20px 0px 0px 0px;
+        width: 100%;
+        height: 120px;
+        padding: 0;
+        margin-left: 10px;
     }
 
     .bloc-footer3 {
-        height: 163px;
-        padding: 20px 0px 0px 0px;
-        margin-right: 20%;
+        width: 100%;
+        height: 120px;
+        padding: 0;
+        margin-left: 10px;
     }
 
     .footer-title {
@@ -1551,8 +1608,3 @@ a {
     }
 
 }
-    
-
-
-
-
