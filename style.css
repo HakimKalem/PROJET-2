@@ -37,7 +37,8 @@ body {
 .header {
     display: flex;
     justify-content: space-between;
-    width: 1440px;
+    max-width: 1440px;
+    width: 100%;
     height: 79px;
 }
 
@@ -108,7 +109,7 @@ ul li:hover {
 .group-info {
     display: flex;
     flex-direction: column;
-    width: 1340px;
+    width: 100%;
     margin-top: 20px;
     margin-bottom: 20px;
     gap: 35px;
@@ -118,12 +119,11 @@ ul li:hover {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    width: 1340px;
 }
 
 .main-title {
     display: flex;
-    width: 1340px;
+    width: 100%;
     height: 26px;
     font-size: 22px;
     font-weight: 700;
@@ -219,17 +219,17 @@ ul li:hover {
 .all-group {
     display: flex;
     flex-direction: row;
-
 }
+    
 
 .filter-group1 {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     border: 2px solid #F2F2F2;
-    width: 173px;
+    width: 22%;
     height: 50px;
-    padding: 4px 19px 4px 19px;
+    padding: 3px 5px;
     border-radius: 30px;
     margin-right: 20px;
     cursor: pointer;
@@ -238,11 +238,11 @@ ul li:hover {
 .filter-group2 {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     border: 2px solid #F2F2F2;
-    width: 134px;
+    width: 22%;
     height: 50px;
-    padding: 4px 19px 4px 19px;
+    padding: 3px 5px;
     border-radius: 30px;
     margin-right: 20px;
     cursor: pointer;
@@ -251,11 +251,11 @@ ul li:hover {
 .filter-group3 {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     border: 2px solid #F2F2F2;
-    width: 170px;
+    width: 24%;
     height: 50px;
-    padding: 4px 19px 4px 19px;
+    padding: 3px 5px;
     border-radius: 30px;
     margin-right: 20px;
     cursor: pointer;
@@ -264,11 +264,11 @@ ul li:hover {
 .filter-group4 {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     border: 2px solid #F2F2F2;
-    width: 167px;
+    width: 40%;
     height: 50px;
-    padding: 4px 19px 4px 19px;
+    padding: 3px 5px;
     border-radius: 30px;
     margin-right: 20px;
     cursor: pointer;
@@ -507,28 +507,29 @@ a {
 #activites {
     margin-top: 50px;
     margin-bottom: 50px;
+    width: 100%;
     height: 560px;
-    padding: 30px;
+    padding: 30px 0 30px 0;
     gap: 30px;
 }
 
 .bloc-activites {
     display: flex;
     justify-content: center;
-    width: 1, 280px;
+    width: 100%
     height: 439px;
     gap: 30px;
     cursor: pointer;
 }
 
 .bloc-activites .card {
-    width: 297.5px;
+    width: 22%;
     height: 439px;
     border-radius: 20px 20px 0px 0px;
 }
 
 .bloc-activites img {
-    width: 297.5px;
+    width: 100%;
     height: 380px;
     border-radius: 20px 20px 0px 0px;
 }
@@ -699,6 +700,7 @@ a {
     .group-info {
         display: flex;
         flex-direction: column;
+        width: 100%;
         margin-top: 20px;
         margin-bottom: 20px;
         gap: 35px;
@@ -708,12 +710,10 @@ a {
         display: flex;
         flex-direction: column;
         gap: 8px;
-        width: 924px;
     }
 
     .main-title {
         display: flex;
-        width: 924px;
         height: 26px;
         font-size: 22px;
         font-weight: 700;
@@ -789,8 +789,8 @@ a {
     /****** Barre de filtres ***********/
 
     .filter-bar {
-        height: 50px;
         gap: 15px;
+        height: auto;
         display: flex;
         flex-direction: column;
         align-items: start;
@@ -807,6 +807,7 @@ a {
     .all-group {
         display: flex;
         flex-direction: row;
+        width: 100%;
     }
 
 
@@ -815,7 +816,7 @@ a {
         align-items: center;
         justify-content: space-between;
         border: 2px solid #F2F2F2;
-        width: 17%;
+        width: 19%;
         height: 50px;
         padding: 4px 19px 4px 19px;
         border-radius: 30px;
@@ -828,7 +829,7 @@ a {
         align-items: center;
         justify-content: space-between;
         border: 2px solid #F2F2F2;
-        width: 11%;
+        width: 15%;
         height: 50px;
         padding: 4px 19px 4px 19px;
         border-radius: 30px;
@@ -841,7 +842,7 @@ a {
         align-items: center;
         justify-content: space-between;
         border: 2px solid #F2F2F2;
-        width: 16%;
+        width: 19%;
         height: 50px;
         padding: 4px 19px 4px 19px;
         border-radius: 30px;
@@ -903,10 +904,6 @@ a {
         font-weight: bold;
         display: flex;
         align-items: center;
-    }
-
-    .info-message {
-        margin-top: 12%;
     }
 
 
@@ -1005,8 +1002,9 @@ a {
     #activites {
         margin-top: 50px;
         margin-bottom: 50px;
+        width: 100%;
         height: 390px;
-        padding: 30px;
+        padding: 30px 0 30px 0;
         gap: 30px;
     }
 
@@ -1014,7 +1012,7 @@ a {
         display: flex;
         justify-content: center;
         width: 100%;
-        height: 270px;
+        height: 280px;
         gap: 30px;
         cursor: pointer;
     }
@@ -1150,22 +1148,24 @@ a {
 
     .list {
         margin-top: 0;
-        padding: 0 50px 0 50px;
+        padding: 0;
         display: flex;
         justify-content: center;
         width: 100%;
         height: 35px;
-        gap: 68px;
+        gap: 0;
         border-bottom: 5px solid #F2F2F2;
     }
 
     .first-button {
         width: 50%;
+        justify-content: center;
         height: 35px;
     }
 
     .nd-button {
         width: 50%;
+        justify-content: center;
         height: 35px;
     }
 
@@ -1196,7 +1196,7 @@ a {
     .group-info {
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 90%;
         padding: 0 20px 0 20px;
         margin-top: 20px;
         margin-bottom: 20px;
@@ -1299,8 +1299,7 @@ a {
     /****** Barre de filtres ***********/
 
     .filter-bar {
-        height: 100%;
-        width: 90%;
+        width: 70%;
         gap: 15px;
         display: flex;
     }
@@ -1309,7 +1308,6 @@ a {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        width: 100%;
         gap: 10px;
     }
 
@@ -1418,9 +1416,8 @@ a {
 
 
     .info-message {
-        margin-top: 20%;
-        margin-bottom: -15%;
-        padding-left: 7%;
+        margin-top: 30px;
+        padding-left: 10px;
     }
 
 
@@ -1429,6 +1426,11 @@ a {
 
     .hebergements-and-populaires {
         flex-direction: column;
+        margin-top: 0;
+    }
+
+    .hebergements-and-populaires section {
+        border-radius: 0;
     }
 
 
@@ -1491,7 +1493,7 @@ a {
 
     .populaires {
         width: 100%;
-        margin-top: 50px;
+        margin-top: 30px;
         order: 1;
     }
 
@@ -1519,9 +1521,14 @@ a {
     #activites {
         margin-top: 0;
         margin-bottom: 50px;
+        width: 100%;
         height: 100%;
-        padding: 30px;
+        padding: 30px 0 30px 0;
         gap: 30px;
+    }
+
+    #activites h2 {
+        padding-left: 5%;
     }
 
     .bloc-activites {
@@ -1535,8 +1542,9 @@ a {
     }
 
     .bloc-activites .card {
-        width: 100%;
+        width: 90%;
         height: 270px;
+        padding: 0;
         border-radius: 20px;
         box-sizing: border-box;
     }
